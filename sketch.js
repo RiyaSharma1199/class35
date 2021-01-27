@@ -18,6 +18,7 @@ function setup(){
 function draw(){
   background("white");
   
+  if(position!==undefined){
     if(keyDown(LEFT_ARROW)){
       writePosition(-1,0);
     }
@@ -31,7 +32,7 @@ function draw(){
       writePosition(0,+1);
     }
     drawSprites();
-  
+  }
 }
 
 function writePosition(x,y){
